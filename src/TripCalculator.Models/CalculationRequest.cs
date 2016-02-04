@@ -6,10 +6,4 @@ namespace TripCalculator.Models
     {
         public List<Student> Students { get; set; }
     }
-
-    public class Expense
-    {
-        public string Name { get; set; }
-        public decimal Amount { get; set; }
-    }
 }

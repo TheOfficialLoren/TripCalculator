@@ -6,13 +6,24 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Trip Calulator</title>
-
-    <asp:PlaceHolder runat="server">
-
-    </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <title>Trip Calulator</title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <asp:PlaceHolder runat="server"></asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .Watermark {
+            color: GrayText;
+            font-style: italic;
+        }
+
+        .warn {
+            color: orange;
+        }
+    </style>
 
 </head>
 <body>
@@ -36,7 +47,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Trip Calculator</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Trip Calculator by Loren Anderson. <a href="https://www.linkedin.com/in/loren-anderson-85953a13">LinkedIn</a></p>
             </footer>
         </div>
     </form>
