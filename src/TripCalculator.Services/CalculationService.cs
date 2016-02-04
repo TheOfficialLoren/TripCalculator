@@ -10,7 +10,7 @@ namespace TripCalculator.Services
     public class CalculationService
     {
 
-        public CalculationResponse CalculateExpenses(CaclulationRequest request)
+        public static CalculationResponse CalculateExpenses(CalculationRequest request)
         {
             throw new NotImplementedException();
         }

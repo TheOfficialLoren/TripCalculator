@@ -4,6 +4,13 @@ namespace TripCalculator.Models
 {
     public class CalculationResponse
     {
-        public List<Student> Students { get; set; }
+        public List<Payment> PaymentsDue { get; set; }
+    }
+
+    public class Payment
+    {
+        public string To { get; set; }
+        public string From { get; set; }
+        public decimal Amount { get; set; }
     }
 }
