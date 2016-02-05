@@ -314,11 +314,11 @@ namespace TripCalculator.Tests
 
             Assert.AreEqual(4m, response.PaymentsDue[0].Amount);
             Assert.AreEqual("Jack", response.PaymentsDue[0].From);
-            Assert.AreEqual("Zach", response.PaymentsDue[0].To);
+            Assert.AreEqual("Ian", response.PaymentsDue[0].To);
 
             Assert.AreEqual(4m, response.PaymentsDue[1].Amount);
             Assert.AreEqual("Charlie", response.PaymentsDue[1].From);
-            Assert.AreEqual("Ian", response.PaymentsDue[1].To);
+            Assert.AreEqual("Zach", response.PaymentsDue[1].To);
 
             Assert.AreEqual(1m, response.PaymentsDue[2].Amount);
             Assert.AreEqual("Loren", response.PaymentsDue[2].From);

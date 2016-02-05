@@ -30,8 +30,9 @@ namespace TripCalculator.Services
 
             do
             {
-                Student smallestContributer = request.Students.OrderBy(st => st.TotalPaid).First();
-                Student biggestContributer = request.Students.OrderByDescending(st => st.TotalPaid).First();
+                request.Students = request.Students.OrderBy(st => st.TotalPaid).ToList();
+                Student smallestContributer = request.Students.First();
+                Student biggestContributer = request.Students.Last();
                 decimal contributionAmt = Math.Min(biggestContributer.TotalPaid - costPerStudent,
                     costPerStudent - smallestContributer.TotalPaid);
 
